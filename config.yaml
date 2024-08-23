@@ -1,0 +1,11 @@
+###
+### VkDownloader config file
+###
+### Only for non-private data!
+### For login and password use config.private.yaml file
+###
+
+
+# Use app id from Kate Mobile (2685278) instead of your app id, cuz VK Messages API requires your app to be verified.
+# Iirc, official VK applications have some additional safety reqirements, so using Kate Mobile is the best option.
+app_id: 2685278
