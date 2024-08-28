@@ -3,9 +3,46 @@
 ###
 ### Only for non-private data!
 ### For login and password use config.private.yaml file
+### Possible values will be listed below
 ###
 
 
 # Use app id from Kate Mobile (2685278) instead of your app id, cuz VK Messages API requires your app to be verified.
 # Iirc, official VK applications have some additional safety reqirements, so using Kate Mobile is the best option.
 app_id: 2685278
+
+
+# Videos don't work properly now
+process_video: False
+
+
+# Here you can add values that should be ignored:
+# 1 - text documents
+# 2 - archives
+# 3 - gif
+# 4 - image
+# 5 - audio
+# 6 - video
+# 7 - e-books
+# 8 - unknown
+doc_ignore_by_type:
+- 1
+- 2
+- 7
+
+
+##
+## This values should be described in private config
+## Please create it manually and replace placeholders from examples with your data
+##
+
+# login: "+79999999999"
+# password: "password"
+
+## Optional field - here you can list peer ids which you want to process. 
+## If the field is not specified, then the program will ask you at runtime 
+## about each peer whether you want to process it or not
+# peer_ids_to_process:
+# - 123456789
+# - 2000000001
+# - 2000000002
